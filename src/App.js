@@ -1,14 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-
+import { Header } from './components/common/Header';
 class App extends React.Component {
     render() {
         return(
             <View>
-                <Text>Hi</Text>
-                <Text>Hi</Text>
-                <Text>Hi</Text>
-                <Text>Hi</Text>
+                <Header headerText='Authentication' />
                 <Text>Hi</Text>
             </View>
         );
