@@ -2,14 +2,15 @@ import React from 'react';
 import { Button, Card, CardSection, Input } from './common';
 
 class LoginForm extends React.Component {
-    state = { text: 'Enter something' }
+    state = { text: '' }
     
     render() {
         return(
             <Card>
                 <CardSection>
                     <Input
-                        label='Email'
+                        label="Email"
+                        placeholder="user@gmail.com"
                         value={this.state.text} 
                         onChangeText={text => this.setState({ text })}
                     />
